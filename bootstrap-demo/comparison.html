@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap vs. Custom CSS</title>
+  <style>
+    :root {
+      --ink: #1f2328;
+      --muted: #57606a;
+      --bootstrap: #7c3aed;
+      --custom: #0969da;
+      --border: #d0d7de;
+      --bg: #ffffff;
+      --bg-soft: #f6f8fa;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 2.5rem 1.25rem;
+      background: var(--bg-soft);
+      color: var(--ink);
+      font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2.5rem;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      margin: 0 0 0.35rem;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin: 0 0 2rem;
+      font-size: 0.95rem;
+    }
+
+    p {
+      margin: 0;
+      font-size: 0.98rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Bootstrap vs. Custom CSS</h1>
+    <p>Using a framework was faster because pre-built utility classes eliminated writing repetitive code from scratch. However, I lost exact control over unique, pixel-perfect layouts that were easy to fine-tune line-by-line in my hand-written CSS. The switch ultimately traded total design freedom for speed and consistency.</p>
+  </main>
+</body>
+</html>
